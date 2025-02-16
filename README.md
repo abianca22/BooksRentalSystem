@@ -1,7 +1,7 @@
 # BooksRentalSystem
 
 ## Descrierea Proiectului
-Books Rental API este o aplicație REST pentru gestionarea împrumuturilor de cărți într-o bibliotecă. Aplicația permite administrarea utilizatorilor, a cărților și a împrumuturilor, oferind funcționalități pentru angajați și administratori. Baza de date utilizată este PostgreSQL, iar testele sunt implementate folosind Mockito.
+Books Rental System este o aplicație REST pentru gestionarea împrumuturilor de cărți într-o bibliotecă. Aplicația permite administrarea utilizatorilor, a cărților și a împrumuturilor, oferind funcționalități pentru angajați și administratori. Baza de date utilizată este PostgreSQL, iar testele sunt implementate folosind Mockito.
 
 ## 10 Business Requirements
 1. Se pot adăuga, modifica sau șterge utilizatori.
