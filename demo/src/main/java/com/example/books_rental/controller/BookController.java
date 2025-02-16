@@ -12,6 +12,7 @@ import com.example.books_rental.service.BooksManagementService;
 import com.example.books_rental.service.CategoriesManagementService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,6 +20,7 @@ import java.net.URI;
 
 @RestController
 @RequestMapping("/books")
+@Tag(name = "Books", description = "API pentru gestionarea cărților")
 public class BookController {
     private final BooksManagementService bookService;
     private final CategoriesManagementService categoryService;

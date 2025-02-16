@@ -13,6 +13,7 @@ import com.example.books_rental.service.RentalsManagementService;
 import com.example.books_rental.service.UsersManagementService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.apache.coyote.Response;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -22,6 +23,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/rentals")
+@Tag(name = "Rentals", description = "API pentru gestionarea împrumuturilor")
 public class RentalController {
     private final RentalsManagementService rentalService;
     private final BooksManagementService bookService;
