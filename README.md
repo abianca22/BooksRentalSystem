@@ -85,8 +85,7 @@ Aplicația este construită pe baza unei arhitecturi tipice Spring Boot, cu urm�
 - Aplicația include validări pentru câmpurile obligatorii utilizând anotările Spring Validation.
 - Testele unitare sunt implementate folosind Mockito pentru a asigura corectitudinea logicii de business.
 
-![Swagger](image.png)
-
 ## Documentație Swagger
 - Documentația Swagger poate fi accesată la http://localhost:8080/swagger-ui/index.html
 
+![Swagger](image.png)
