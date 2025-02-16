@@ -7,6 +7,7 @@ import com.example.books_rental.model.entities.User;
 import com.example.books_rental.service.UsersManagementService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,6 +15,7 @@ import java.net.URI;
 
 @RestController
 @RequestMapping("/users")
+@Tag(name = "Users", description = "API pentru gestionarea utilizatorilor")
 public class UserController {
     private final UsersManagementService userService;
     private final UserMapper userMapper;

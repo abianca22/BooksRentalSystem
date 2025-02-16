@@ -11,6 +11,7 @@ import com.example.books_rental.service.ReturnsManagementService;
 import com.example.books_rental.service.UsersManagementService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -21,6 +22,7 @@ import java.net.URI;
 
 @RestController
 @RequestMapping("/returns")
+@Tag(name = "Returns", description = "API pentru gestionarea returnărilor")
 public class ReturnController {
     private final ReturnsManagementService returnsManagementService;
     private final RentalsManagementService rentalsManagementService;
